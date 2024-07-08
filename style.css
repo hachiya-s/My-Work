@@ -1,0 +1,78 @@
+/* header */
+.header {
+  max-width: 960px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4%;
+  margin: 0 auto;
+  color: black;
+}
+
+ul {
+  display: flex;
+  border-style: none;
+  padding: 10px;
+}
+
+li {
+  list-style: none;
+  font-size: 14px;
+  color: black;
+  margin-left: 30px;
+}
+
+li a {
+  color: black;
+  text-decoration: none;
+}
+
+img.insta {
+  width: 20px;
+}
+
+/* main */
+
+.mainvisual-pc {
+  object-position: 50% 100%;
+  width: 100%;
+  max-width: 1920px;
+  height: 420px;
+  object-fit: cover;
+}
+
+
+h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  clear: both;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+li {
+  width: 31%;
+
+img {
+  width: 31%;
+}
+
+/* .works {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  float: left;
+  width: 250px;
+  max-width: 960px;
+  margin-left: 50px;
+  padding: 15px 0px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+} */
