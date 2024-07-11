@@ -1,78 +1,158 @@
+html {
+  font-size: 100%;
+}
+body {
+  color: #24292e;
+}
+
+img {
+  max-width: 100%; 　 /* これがあると横のスクロールバーが出ない */
+}
 /* header */
-.header {
-  max-width: 960px;
+
+.header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 4%;
+  height: 240px;
   margin: 0 auto;
-  color: black;
+  padding: 0 4%;
 }
 
-ul {
+.header ul {
   display: flex;
-  border-style: none;
+}
+
+.header li {
+  font-size: 16px;
   padding: 10px;
-}
-
-li {
   list-style: none;
-  font-size: 14px;
-  color: black;
-  margin-left: 30px;
 }
 
-li a {
-  color: black;
+.header a {
   text-decoration: none;
+  color: #24292e;
 }
 
-img.insta {
-  width: 20px;
-}
-
-/* main */
-
-.mainvisual-pc {
-  object-position: 50% 100%;
+.manvisual img {
   width: 100%;
   max-width: 1920px;
   height: 420px;
   object-fit: cover;
+  border-style: none;
 }
 
+.icon {
+  width: 20px;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  /* display: block; */
+  text-align: center;
+}
 
 h2 {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  clear: both;
+  margin: 100px 0 65px;
+}
+
+.wrapper p {
+  font-size: 14px;
+  text-align: left;
+  margin: 50px;
+}
+
+.wrapper li {
+  list-style: none;
 }
 
 ul {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 50px;
-}
-
-li {
-  width: 31%;
-
-img {
-  width: 31%;
-}
-
-/* .works {
+  list-style: none; /* 箇条書きのマーカーを削除 */
+  padding: 0; /* ul要素の内側の余白をゼロにする */
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  float: left;
-  width: 250px;
-  max-width: 960px;
-  margin-left: 50px;
-  padding: 15px 0px;
-  justify-content: center;
-  text-align: center;
+  grid-template-columns: repeat(3, 1fr); /* 3列のグリッドを作成 */
+  gap: 20px; /* 画像間の間隔を調整 */
+}
+
+.works {
+  width: 100%; /* 画像を親要素に合わせて100%にする */
+  height: auto; /* 高さを自動調整してアスペクト比を保持 */
+  display: block; /* 画像をブロック要素として扱う */
+}
+
+/*-------------------------------------------
+News
+-------------------------------------------*/
+#news dl {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: solid 1px #c8c8c8;
+  margin-bottom: 20px;
+}
+#news dt {
+  width: 10%;
+  border-bottom: solid 1px #c8c8c8;
+  padding: 15px;
   align-items: center;
-} */
+  justify-content: center;
+}
+#news dd {
+  width: 90%;
+  border-bottom: solid 1px #c8c8c8;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*-------------------------------------------
+Contact
+-------------------------------------------*/
+#contact dl {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+#contact dt {
+  width: 15%;
+}
+#contact dd {
+  width: 85%;
+  margin-bottom: 10px;
+}
+#contact dd input,
+#contact dd textarea {
+  width: 100%;
+  border: solid 1px #c8c8c8;
+  padding: 10px;
+}
+#contact dd textarea {
+  height: 10rem;
+}
+#contact .button {
+  text-align: center;
+  margin-bottom: 100px;
+}
+#contact .button input {
+  width: 200px;
+  background-color: #24292e;
+  color: #fff;
+  padding: 15px 0;
+  border: solid 1px #24292e;
+}
+#contact .button input:hover {
+  background: #fff;
+  color: #24292e;
+}
+
+/*-------------------------------------------
+フッター
+-------------------------------------------*/
+#footer {
+  background-color: #24292e;
+  color: #fff;
+  font-size: 0.5rem;
+  padding: 10px 20px;
+  text-align: center;
+}

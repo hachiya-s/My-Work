@@ -15,21 +15,25 @@
       </h1>
       <nav>
         <ul>
-          <li><a href="#About">About!</a></li>
-          <li><a href="">Works</a></li>
-          <li><a href="">News</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Works">Works</a></li>
+          <li><a href="#News">News</a></li>
+          <li><a href="Contact">Contact</a></li>
           <li>
             <a href=""
-              ><img class="insta" src="img/icon-instagram.png" alt="insta-icon"
-            /></a>
+              ><img
+                class="icon"
+                src="img/icon-instagram.png"
+                alt="insta-icon"
+              />
+            </a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <div>
+      <div id="mainvisual">
         <img
           class="mainvisual-pc"
           src="img/mainvisual-pc.jpg"
@@ -47,7 +51,11 @@
           url: www.xxxxxx.jp <br />
           mail: xxx@xxxxxx.jp
         </p>
-        <p>テキストテキスト</p>
+        <p>
+          プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストスト
+          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        </p>
       </section>
       <section id="works" class="wrapper">
         <h2 class="title-works">Works</h2>
@@ -75,15 +83,42 @@
 
       <section id="news" class="wrapper">
         <h2 class="news">News</h2>
+        <dl>
+          <dt>2020.XX.XX</dt>
+          <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</dd>
+          <dt>2020.XX.XX</dt>
+          <dd>ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</dd>
+          <dt>2019.XX.XX</dt>
+          <dd>
+            【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト
+          </dd>
+          <dt>2019.XX.XX</dt>
+          <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</dd>
+          <dt>2019.XX.XX</dt>
+          <dd>
+            【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト
+          </dd>
+        </dl>
       </section>
 
       <section id="contact" class="wrapper">
         <h2 class="contact">Contact</h2>
-        <ul>
-          <li></li>
-        </ul>
-        <button>送信</button>
+        <form action="#" method="post">
+          <dl>
+            <dt><label for="name">NAME</label></dt>
+            <dd><input type="text" id="name" name="your-name" /></dd>
+            <dt><label for="email">E-mail</label></dt>
+            <dd><input type="email" id="email" name="your-email" /></dd>
+            <dt><label for="message">MESSAGE</label></dt>
+            <dd><textarea id="message" name="your-message"></textarea></dd>
+          </dl>
+          <div class="button"><input type="submit" value="送信" /></div>
+        </form>
       </section>
     </main>
+
+    <footer id="footer">
+      <p>&copy; 2020 My Work</p>
+    </footer>
   </body>
 </html>
